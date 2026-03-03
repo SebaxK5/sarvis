@@ -1,0 +1,111 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="35%" r="65%">
+      <stop offset="0%" stop-color="#1f1600"/>
+      <stop offset="100%" stop-color="#040300"/>
+    </radialGradient>
+    <linearGradient id="hg" x1="20%" y1="0%" x2="80%" y2="100%">
+      <stop offset="0%" stop-color="#ffe566"/>
+      <stop offset="35%" stop-color="#ffd700"/>
+      <stop offset="100%" stop-color="#a06000"/>
+    </linearGradient>
+    <linearGradient id="sg" x1="10%" y1="0%" x2="90%" y2="100%">
+      <stop offset="0%" stop-color="#fff8dc"/>
+      <stop offset="40%" stop-color="#ffd700"/>
+      <stop offset="100%" stop-color="#b8860b"/>
+    </linearGradient>
+    <linearGradient id="lg" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ffd700" stop-opacity="0"/>
+      <stop offset="30%" stop-color="#ffd700" stop-opacity="0.9"/>
+      <stop offset="70%" stop-color="#ffd700" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#ffd700" stop-opacity="0"/>
+    </linearGradient>
+    <radialGradient id="cg" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ffd700" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#ffd700" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="bl"><feGaussianBlur stdDeviation="10"/></filter>
+    <filter id="bl2"><feGaussianBlur stdDeviation="3"/></filter>
+    <filter id="glow"><feDropShadow dx="0" dy="0" stdDeviation="12" flood-color="#ffd700" flood-opacity="0.6"/></filter>
+    <filter id="glow2"><feDropShadow dx="0" dy="0" stdDeviation="5" flood-color="#ffd700" flood-opacity="0.8"/></filter>
+    <clipPath id="hc"><polygon points="256,62 442,163 442,365 256,466 70,365 70,163"/></clipPath>
+  </defs>
+
+  <rect width="512" height="512" fill="#020100"/>
+  <circle cx="256" cy="256" r="256" fill="url(#bg)"/>
+
+  <!-- glow za hexem -->
+  <polygon points="256,62 442,163 442,365 256,466 70,365 70,163" fill="url(#cg)" filter="url(#bl)"/>
+  <polygon points="256,56 448,158 448,370 256,472 64,370 64,158" fill="none" stroke="#ffd700" stroke-width="2" opacity="0.12" filter="url(#bl2)"/>
+
+  <!-- glowny hex -->
+  <polygon points="256,62 442,163 442,365 256,466 70,365 70,163" fill="none" stroke="url(#hg)" stroke-width="8"/>
+  <polygon points="256,70 434,167 434,361 256,458 78,361 78,167" fill="#080500"/>
+
+  <!-- wewnetrzne ringi -->
+  <polygon points="256,100 410,182 410,346 256,428 102,346 102,182" fill="none" stroke="#ffd700" stroke-width="1" opacity="0.18"/>
+  <polygon points="256,132 386,198 386,330 256,396 126,330 126,198" fill="none" stroke="#ffd700" stroke-width="0.7" opacity="0.1"/>
+
+  <!-- narozne romby -->
+  <polygon points="256,57 264,74 256,68 248,74" fill="url(#hg)"/>
+  <polygon points="443,161 443,179 435,165 441,150" fill="url(#hg)"/>
+  <polygon points="443,349 435,363 441,378 443,349" fill="url(#hg)"/>
+  <polygon points="256,471 248,454 256,460 264,454" fill="url(#hg)"/>
+  <polygon points="69,349 69,377 77,363 71,348" fill="url(#hg)"/>
+  <polygon points="69,161 71,178 77,165 69,179" fill="url(#hg)"/>
+
+  <!-- scanlines -->
+  <g clip-path="url(#hc)" opacity="0.025">
+    <line x1="60" y1="180" x2="452" y2="180" stroke="#ffd700" stroke-width="1"/>
+    <line x1="60" y1="210" x2="452" y2="210" stroke="#ffd700" stroke-width="1"/>
+    <line x1="60" y1="240" x2="452" y2="240" stroke="#ffd700" stroke-width="1"/>
+    <line x1="60" y1="270" x2="452" y2="270" stroke="#ffd700" stroke-width="1"/>
+    <line x1="60" y1="300" x2="452" y2="300" stroke="#ffd700" stroke-width="1"/>
+    <line x1="60" y1="330" x2="452" y2="330" stroke="#ffd700" stroke-width="1"/>
+    <line x1="60" y1="360" x2="452" y2="360" stroke="#ffd700" stroke-width="1"/>
+  </g>
+
+  <!-- okrag centralny -->
+  <circle cx="256" cy="256" r="115" fill="none" stroke="#ffd700" stroke-width="0.8" opacity="0.15"/>
+  <circle cx="256" cy="256" r="78" fill="none" stroke="#ffd700" stroke-width="0.5" opacity="0.1"/>
+
+  <!-- glow S -->
+  <text x="256" y="295" font-family="Georgia,serif" font-size="260" font-weight="bold" text-anchor="middle" fill="#ffd700" opacity="0.07" filter="url(#bl)">S</text>
+
+  <!-- glowne S - wyżej żeby zrobić miejsce na ornament -->
+  <text x="256" y="295" font-family="Georgia,serif" font-size="245" font-weight="bold" text-anchor="middle" fill="url(#sg)" filter="url(#glow)">S</text>
+  <text x="256" y="295" font-family="Georgia,serif" font-size="245" font-weight="bold" text-anchor="middle" fill="none" stroke="#ffe566" stroke-width="1" opacity="0.4">S</text>
+
+  <!-- ═══ ORNAMENT POD S ═══ -->
+
+  <!-- linia pozioma z gradientem -->
+  <rect x="130" y="346" width="252" height="1.5" fill="url(#lg)" opacity="0.9"/>
+
+  <!-- centralny diament -->
+  <polygon points="256,336 268,350 256,364 244,350" fill="none" stroke="#ffd700" stroke-width="1.5" opacity="0.8" filter="url(#glow2)"/>
+  <polygon points="256,341 264,350 256,359 248,350" fill="#ffd700" opacity="0.25"/>
+
+  <!-- lewy ornament: linia + 2 romby -->
+  <line x1="130" y1="350" x2="230" y2="350" stroke="#ffd700" stroke-width="1" opacity="0.5"/>
+  <polygon points="178,344 185,350 178,356 171,350" fill="none" stroke="#ffd700" stroke-width="1" opacity="0.5"/>
+  <polygon points="148,347 153,350 148,353 143,350" fill="#ffd700" opacity="0.4"/>
+
+  <!-- prawy ornament: linia + 2 romby -->
+  <line x1="282" y1="350" x2="382" y2="350" stroke="#ffd700" stroke-width="1" opacity="0.5"/>
+  <polygon points="334,344 341,350 334,356 327,350" fill="none" stroke="#ffd700" stroke-width="1" opacity="0.5"/>
+  <polygon points="364,347 369,350 364,353 359,350" fill="#ffd700" opacity="0.4"/>
+
+  <!-- 3 male kropki pod ornamentem -->
+  <circle cx="246" cy="374" r="2.5" fill="#ffd700" opacity="0.5"/>
+  <circle cx="256" cy="374" r="2.5" fill="#ffd700" opacity="0.7"/>
+  <circle cx="266" cy="374" r="2.5" fill="#ffd700" opacity="0.5"/>
+
+  <!-- 3 diamenty na gorze -->
+  <polygon points="256,116 263,130 256,124 249,130" fill="#ffd700" opacity="0.55"/>
+  <polygon points="218,128 224,140 218,136 212,140" fill="#ffd700" opacity="0.3"/>
+  <polygon points="294,128 300,140 294,136 288,140" fill="#ffd700" opacity="0.3"/>
+
+  <!-- subtelny krzyz -->
+  <line x1="256" y1="70" x2="256" y2="458" stroke="#ffd700" stroke-width="0.4" opacity="0.06"/>
+  <line x1="78" y1="264" x2="434" y2="264" stroke="#ffd700" stroke-width="0.4" opacity="0.06"/>
+</svg>

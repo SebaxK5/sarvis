@@ -1,0 +1,15 @@
+{
+  "name": "S.A.R.V.I.S.",
+  "short_name": "SARVIS",
+  "start_url": "./sarvis.html",
+  "display": "standalone",
+  "background_color": "#080501",
+  "theme_color": "#ffd700",
+  "icons": [
+    {
+      "src": "sarvis-icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}
